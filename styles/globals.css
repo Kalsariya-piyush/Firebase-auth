@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+}
+
+body {
+  @apply bg-themebg-100 text-themetxt-100 tracking-wide
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl
+}
+
+li {
+  @apply cursor-pointer
+}
+
+button {
+  @apply shadow-md shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-basic-200 to-basic-100 text-white
+}
+
+.btn {
+  @apply shadow-md shadow-gray-400 rounded-lg uppercase bg-gradient-to-r from-basic-200 to-basic-100 text-white
+}
+
+.bg-nav_items {
+  @apply bg-themebg-100
+}
+
+.contact-icons {
+  @apply rounded-full shadow-sm hover:shadow-md hover:scale-105 ease-in duration-300 hover:shadow-gray-400 shadow-gray-400 p-3 cursor-pointer
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-101%);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
